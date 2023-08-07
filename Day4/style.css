@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .chess__board {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+  .chess__box {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+  }
+  
