@@ -9,7 +9,7 @@ function setTime() {
   const mins = now.getMinutes();
   const minsDegree = mins * 6 + 90;
   const hrs = now.getHours();
-  const hrsDegree = hrs * 30 + 90;
+  const hrsDegree = (hrs + mins / 60) * 30 + 90;
   console.log(secs);
   second.style.transform = `rotate(${secsDegree}deg)`;
   minute.style.transform = `rotate(${minsDegree}deg)`;
